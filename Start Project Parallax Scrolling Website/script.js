@@ -15,4 +15,9 @@ window.addEventListener('scroll', () => {
     hill5.style.left = value * 1.5 + 'px';
     hill4.style.left = value * -1.5 + 'px';
     hill1.style.top = value * 1 + 'px';
+
+    if (value >= 500) {
+        hill1.style.top = '300px';
+        text.style.marginTop = '0';
+    }
 });
